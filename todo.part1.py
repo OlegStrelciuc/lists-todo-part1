@@ -60,11 +60,11 @@ while True:
         system("cls")
         index_A = int(input("Enter first task position: ")) - 1
         index_B = int(input("Enter second task position: ")) - 1
-        st = tasks.pop(index_A)                                    # st - swap tasks
-        st_1 = tasks.pop(index_B-1)
-        tasks.insert(index_B, st)
-        tasks.insert(index_A, st_1)
-
+        #st = tasks.pop(index_A)                                    # st - swap tasks
+        #st_1 = tasks.pop(index_B-1)
+        #tasks.insert(index_B, st)
+        #tasks.insert(index_A, st_1)
+        tasks[index_B],tasks[index_A] = tasks[index_A],tasks[index_B]
 
 
 
